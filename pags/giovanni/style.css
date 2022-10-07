@@ -1,0 +1,23 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+section {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+div {
+    margin: auto;
+    width: 80%;
+    text-align: justify;
+    display: flex;
+}
+
+p {
+    padding: 10px;
+}
+

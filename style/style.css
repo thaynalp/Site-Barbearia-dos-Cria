@@ -1,0 +1,657 @@
+/*-------------Reset-------------*/
+button {
+  background: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*-------------Layout-------------*/
+body {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#home {
+  background-color: rgb(63, 43, 7);
+  overflow: hidden;
+  height: 390px;
+}
+#home img {
+  width: 100%;
+}
+
+
+#about {
+  display: flex;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+#about .texto {
+  font-size: 40px;
+  padding-top: 2rem;
+}
+
+
+#work {
+  display: flex;
+  background-color: rgb(34, 33, 33);
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  height: 115vh;
+}
+
+#work .texto {
+  font-size: 40px;
+  padding-top: 2rem;
+}
+
+.work {
+  padding: 20px;
+  height: 100vh;
+}
+
+.linha {
+  height: 3px;
+  background: linear-gradient(45deg, #e75d00, #cfbd57);
+}
+
+
+
+@media (max-width: 705px) {
+  #home {
+    height: 100%;
+  }
+}
+
+
+#galeria {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+
+}
+
+#galeria .tituloprincipal {
+  width: 100%;
+  font-size: 45px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  opacity: 1;
+  color: #ffffff;
+}
+
+.titulocard {
+  color: black;
+  text-shadow: 0.01em 0.1em 0.1em rgb(146, 77, 54); 
+  margin-left: 10px ;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.containercard {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  overflow: hidden; /*corta ou esconde a imagem se ela ultrapassar a div*/
+}
+
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s; /*transition é um poderoso recurso para a criação de efeitos de animação nos elementos HTML. Ele contém uma série de propriedades adicionais que ajudam a tornar o efeito de transição personalizado, como o uso da propriedade transition-timing-function associada à função cubic-bezier().*/
+  position: relative; /*position relative posiciona o elemento em relação a si mesmo. Ou seja, o ponto zero será o canto superior esquerdo, e ele começará a contar a partir dali.*/
+  top: 4px;
+  bottom: 4px;
+}
+
+.border:hover {
+  border: 1px solid rgb(247, 244, 244);
+}
+
+.card {
+  
+  height: 379px;
+  width: 300px;
+  background: rgb(78, 85, 92);
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background-color: black;
+  box-shadow: 0 70px 63px -63px rgb(233, 71, 71);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 40px;
+
+}
+
+.card0 {
+  background: url(..//imagens/neymar\ moicano\ rosa\ \(3\).jpg) center center no-repeat ;
+  background-size: 300px;
+}
+
+/* Card Neymar*/
+.card0:hover {
+  background: url(..//imagens/neymar\ moicano\ rosa\ \(3\).jpg) center left no-repeat; 
+  background-size: 600px;
+}
+
+.card0:hover h2 {
+  opacity:1;
+}
+
+.card0:hover .g {
+  opacity: 1;
+}
+
+
+/*Card Filipe Ret*/
+
+.card1 {
+  background: url(..//imagens/filipe\ ret\ img.jpg) center center no-repeat ;
+  background-size: 400px;
+}
+
+#cordetexto{
+  color: #bbbbbb;
+}
+
+.card1:hover {
+  background: url(..//imagens/filipe\ ret\ img.jpg) center left no-repeat; 
+  background-size: 600px;
+}
+
+.card1:hover h2 {
+  opacity:1;
+}
+
+.card1:hover .g {
+  opacity: 1;
+}
+
+
+/*Card Poze*/
+
+.card2 {
+  background: url(..//imagens/poze\ img.jpg) center center no-repeat ;
+  background-size: 400px;
+}
+
+.card2:hover {
+  background: url(..//imagens/poze\ img.jpg) center left no-repeat; 
+  background-size: 600px;
+}
+
+.card2:hover h2 {
+  opacity:1;
+}
+
+.card2:hover .g {
+  opacity: 1;
+}
+
+/*Card Corte I*/
+.card3 {
+  background: url(..//imagens/corte\ 1.png) center center no-repeat ;
+  background-size: 400px;
+}
+
+#cordetexto{
+  color: #bbbbbb;
+}
+
+.card3:hover {
+  background: url(..//imagens/corte\ 1.png) center left no-repeat; 
+  background-size: 600px;
+}
+
+.card3:hover h2 {
+  opacity:1;
+}
+
+.card3:hover .g {
+  opacity: 1;
+}
+
+
+/*Card Corte II*/
+.card4 {
+  background: url(..//imagens/corte\ 2.png) center center no-repeat ;
+  background-size: 400px;
+}
+
+#cordetexto{
+  color: #bbbbbb;
+  text-shadow: 0.01em 0.1em 0.1em #000000;
+}
+
+.card4:hover {
+  background: url(..//imagens/corte\ 2.png) center left no-repeat; 
+  background-size: 600px;
+}
+
+.card4:hover h2 {
+  opacity:1;
+}
+
+.card4:hover .g {
+  opacity: 15
+}
+
+/*Card Corte III*/
+.card5 {
+  background: url(..//imagens/corte\ 3.jpg) center center no-repeat ;
+  background-size: 400px;
+}
+
+.card5:hover {
+  background: url(..//imagens/corte\ 3.jpg) center left no-repeat; 
+  background-size: 600px;
+}
+
+.card5:hover h2 {
+  opacity:1;
+}
+
+.card5:hover .g {
+  opacity: 1;
+}
+
+.g {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.textocard {
+  position: absolute;
+  margin-left: 10px;
+  color: rgb(20, 20, 19);
+  
+  font-weight: bolder;
+  height: 130px;
+  top: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-around;
+  text-shadow: 0.1em 0.1em 0.1em rgba(255, 255, 255, 0.527);
+}
+
+
+/*------- Galeria fim ------- */
+
+
+#contato {
+  background-color: rgb(34, 33, 33);
+  padding-top: 100px;
+  font-size: 25px;
+  color: white;
+}
+
+.contact-content-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+  color: white;
+}
+.contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content-con .left-contact .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-content-con .left-contact .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0 !important;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon i {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.contact-content-con .left-contact .contact-icon {
+  display: flex;
+  margin-top: 2rem;
+}
+.contact-content-con .left-contact .contact-icon a {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: rgb(38,38,38);
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+.contact-content-con .left-contact .contact-icon a:hover {
+  background-color: rgb(38,38,38);
+}
+.contact-content-con .left-contact .contact-icon a:hover i {
+  color: black;
+}
+.contact-content-con .left-contact .contact-icon a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.contact-content-con .right-contact {
+  margin-left: 3rem;
+}
+.contact-content-con .right-contact .input-control {
+  color: white;
+  margin-left: 1.5rem;
+}
+.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.9rem 1.5rem;
+  outline: none;
+  background-color: rgb(117, 114, 114);
+  width: 100%;
+  color: white;
+}
+.contact-content-con .right-contact .i-c-2 {
+  display: flex;
+}
+.contact-content-con .right-contact .i-c-2 :last-child {
+  margin-left: 1.5rem;
+}
+.contact-content-con .right-contact .submit-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+
+.submit {
+  font-size: 30px;
+  background-color: #777;
+  margin-left: 24px;
+  margin-top: 4px;
+  color: white;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #121314;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #e75d00;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(45deg, #e75d00, #cfbd57);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+/*-------------Helpers-------------*/
+.skew {
+  transform: skew(-20deg);
+}
+
+.un-skew {
+  transform: skew(20deg);
+}
+
+/*-------------Nav-------------*/
+#nav-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#nav {
+  background-color: rgba(0, 0, 0, 0.671);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-family: "Saira Semi Condensed", sans-serif;
+  height: 4.3em;
+  overflow: hidden;
+}
+#nav.nav-visible {
+  height: 100%;
+  overflow: auto;
+}
+
+.nav {
+  display: flex;
+  height: 4em;
+  line-height: 3.4em;
+  flex-grow: 5;
+}
+
+.nav-link,
+.logo {
+  padding: 0 1em;
+}
+
+
+h1.logo {
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 0.75em;
+  color: white;
+}
+
+h1.logo a, a:active, a:hover, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 0.5px solid #ddd;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.left img {
+  width: 62px;
+  padding: 2px;
+  margin-left: 20px;
+}
+
+.btn-nav {
+  top: 25px;
+  right: 15px;
+  position: absolute;
+  color: #e75d00;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@media (min-width: 800px) {
+  #nav-wrapper {
+    overflow: hidden;
+  }
+  #nav {
+    overflow: hidden;
+    flex-direction: row;
+    }
+  .nav-link {
+    border-top: none;
+  }
+  .right {
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    left: 1.5em;
+    height: auto;
+  }
+  .btn-nav {
+    display: none;
+  }
+  .nav-link-span {
+    transform: skew(20deg);
+    display: inline-block;
+  }
+  .nav-link {
+    transform: skew(-20deg);
+    color: #777;
+    text-decoration: none;
+  }
+  .nav-link:last-child {
+    padding-right: 3em;
+  }
+  a:hover.nav-link:hover {
+    color: white;
+    background: #e75d00;
+    background: linear-gradient(45deg, #e75d00, #cfbd57);
+  }
+}
+
+@media (max-width: 705px) {
+  #contato {
+    width: 100%;
+    font-size: small;
+  }
+}
+@keyframes logo-hover {
+  20% {
+    padding-right: 0em;
+  }
+  100% {
+    padding-right: 5em;
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
+    <!--store-->
+    <section class="store">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!--Pente de Garfo-->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="imagenes/pente_garfo.webp" alt="pente_garfo" />
+              <h1>Pente Garfo</h1>
+              <p class="price">R$ 12.98</p>
+              <p class="text">
+                O pente garfo é um acessório utilizado para acentuar e valorizar
+                o volume dos fios. Ajuda a levantar a raiz do cabelo e a soltar
+                os cachinhos mais próximos do couro cabeludo.
+              </p>
+              <p>
+                <button class="button card-button">
+                  Adicionar ao Carrinho
+                </button>
+              </p>
+            </div>
+          </div>
+          <!--Loção Pós Barba-->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="imagenes/Loção_pos_barba.webp" alt="Loção_pos_barba" />
+              <h1>Loção Pós Barba</h1>
+              <p class="price">R$ 20.00</p>
+              <p class="text">
+                A Loção Pós Barba Big Barber Profissional, estimula a
+                regeneração da pele nas áreas lesionadas após o barber,
+                especialmente nas áreas em que a epiderme sofre mais lesões
+              </p>
+              <p>
+                <button class="button card-button">
+                  Adicionar ao Carrinho
+                </button>
+              </p>
+            </div>
+          </div>
+
+          <!--Navalhete-->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="imagenes/navalhete.webp" alt="Navalhete" />
+              <h1>Navalhete</h1>
+              <p class="price">R$ 8.15</p>
+              <p class="text">
+                Base: Aço<br />
+                Cabo Material de Plástico - cor do cabo do navalhete aleatoria
+                de acordo com disponibilidade do estoque podendo ser preto ou
+                marfim
+              </p>
+              <p>
+                <button class="button card-button">
+                  Adicionar ao Carrinho
+                </button>
+              </p>
+            </div>
+          </div>
+
+          <!--Corrente Cordão Masculina-->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="imagenes/corrente.webp" alt="corte" />
+              <h1>Corrente Masculina</h1>
+              <p class="price">R$ 199.99</p>
+              <p class="text">
+                Corrente Masculina Placa 60cm, 3mm com Pingente Placa
+                Frisada.<br />
+                Tudo Folheado em Ouro.<br />
+                Comprimento: 60cm Largura: 3mm<br />
+                Peso: 12grs
+              </p>
+              <p>
+                <button class="button card-button">
+                  Adicionar ao Carrinho
+                </button>
+              </p>
+            </div>
+          </div>
+
+          <!--Bone-->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="imagenes/bone.webp" alt="corte" />
+              <h1>Boné Rapper</h1>
+              <p class="price">R$ 39.90</p>
+              <p class="text">
+                Boné baseball: Preto <br />
+                Caracteristica: Costura na aba.<br />
+                Tamanho: 58cm.<br />
+                Padrão Americano - baseball<br /><br /><br />
+              </p>
+              <p>
+                <button class="button card-button">
+                  Adicionar ao Carrinho
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!--Carrinho de compras-->
+    <section class="container content-section">
+      <h2 class="section-header">CARRINHO</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PREÇO</span>
+        <span class="cart-quantity cart-header cart-column">QUANTIDADE</span>
+      </div>
+      <div class="cart-items cart-reduce">
+        <!--Aqui van a ser anadidos dinamicamente los elementos al carrinho-->
+      </div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">R$ 0</span>
+      </div>
+      <button class="button btn-purchase" type="button">Comprar</button>
+    </section>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="js/store.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="js/swiper.js"></script>
+  </body>
+</html>
