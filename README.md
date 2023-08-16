@@ -21,5 +21,5 @@
    <ol>Formulário de contato</ol>
 </ul>
 
-<h2>Briefing da Projeto:</h2>
+  <h2>Briefing da Projeto:</h2>
 [Barbearia.pdf](https://github.com/thaynalp/Site-Barbearia-dos-Cria/files/12360174/Barbearia.pdf)
