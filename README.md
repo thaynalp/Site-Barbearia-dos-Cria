@@ -20,3 +20,5 @@
    <ol>Galeria de fotos pra se inspirar nos cortes</ol>
    <ol>Formulário de contato</ol>
 </ul>
+
+[Barbearia.pdf](https://github.com/thaynalp/Site-Barbearia-dos-Cria/files/12360174/Barbearia.pdf)
